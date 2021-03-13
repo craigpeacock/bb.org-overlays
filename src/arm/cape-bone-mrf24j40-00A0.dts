@@ -11,6 +11,7 @@
 
 #include <dt-bindings/board/am335x-bbw-bbb-base.h>
 #include <dt-bindings/pinctrl/am33xx.h>
+#include <dt-bindings/interrupt-controller/irq.h>
 
 / {
 	compatible = "ti,beaglebone", "ti,beaglebone-black", "ti,beaglebone-green";
@@ -112,7 +113,7 @@
 				pinctrl-0 = <&mrf24j40_cape_pins>;
 
 				interrupt-parent = <&gpio1>;
-				interrupts = <29>;
+				interrupts = <29 IRQ_TYPE_LEVEL_LOW>;
 
 				//mrf24j40-wake = <&gpio4 19>;
 				//mrf24j40-reset = <gpio21 0>;
