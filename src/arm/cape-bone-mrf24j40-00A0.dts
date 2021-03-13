@@ -106,7 +106,7 @@
 			mrf24j40@0 {
 				compatible = "mrf24j40ma";
 				reg = <0>; /* CHIPSEL */
-				spi-max-frequency = <20000000>;
+				spi-max-frequency = <10000000>;
 				mode = <0>;
 				pinctrl-names = "default";
 				pinctrl-0 = <&mrf24j40_cape_pins>;
